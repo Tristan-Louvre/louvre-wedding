@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
 		<title>Byron and Marguerite's Wedding Website</title>
 
 		<!-- Bootstrap CSS -->
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/app.css" rel="stylesheet">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,12 +17,15 @@
 		<![endif]-->
 	</head>
 	<body>
-		<h1 class="text-center">Hello World</h1>
-		@yield('content')
+		Test
+		<div class="container">
+			@yield('title')
+			@yield('content')
+		</div>
 
 		<!-- jQuery -->
-		<script src="//code.jquery.com/jquery.js"></script>
+		<!--<script src="//code.jquery.com/jquery.js"></script>-->
 		<!-- Bootstrap JavaScript -->
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
 	</body>
 </html>
