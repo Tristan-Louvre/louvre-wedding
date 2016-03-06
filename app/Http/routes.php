@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('partials.celebration');
 });
 
+Route::get('wedding', 'PageController@showWeddingPage');
+Route::get('celebration', 'PageController@showCelebrationPage');
+Route::get('reply', 'PageController@showReplyPage');
+Route::get('gifts', 'PageController@showGiftPage');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
