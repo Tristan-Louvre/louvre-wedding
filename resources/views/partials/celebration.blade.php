@@ -2,7 +2,7 @@
 
 
 @section('content')
-	<h1>Celebration</h1>
+	Celebration
 
 @endsection
 

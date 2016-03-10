@@ -2,7 +2,7 @@
 
 
 @section('content')
-	<h1>Gifts</h1>
+	Gifts
 
 @endsection
 
