@@ -1,4 +1,6 @@
+@extends('layouts.master')
 
+@section('content')
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -23,7 +25,9 @@
 <div class="container">
 
     <div class="starter-template">
-        @yield('content')
+            @yield('content')
     </div>
 
 </div><!-- /.container -->
+
+@endsection
