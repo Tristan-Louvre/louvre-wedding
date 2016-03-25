@@ -67,11 +67,56 @@
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 				<h1 class="page-header">@yield('content')</h1>
 			</div>
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5">
+				{{--	{{ HTML::image('img/Placeholder_500x500.jpg') }}--}}
+					<img class="featurette-image img-responsive center-block" src="/images/Placeholder_500x500.jpg" alt="Generic placeholder image">
+				</div>
 			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7 col-md-push-5">
+					<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5 col-md-pull-7">
+					<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
 		</div>
 	</div>
 
+	{!! Form::open([]) !!}
 
+	{!! Form::text('name', @$name) !!}
+
+	{!! Form::password('password') !!}
+
+	{!! Form::submit('Send') !!}
+
+	{!! Form::close() !!}
 
 
 
