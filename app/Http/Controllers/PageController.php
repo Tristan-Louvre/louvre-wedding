@@ -9,6 +9,11 @@ use App\Http\Controllers\Controller;
 
 class PageController extends Controller
 {
+    public function showCoverPage()
+    {
+        return view('partials.cover');
+    }
+
     public function showWeddingPage()
     {
         return view('partials.wedding');

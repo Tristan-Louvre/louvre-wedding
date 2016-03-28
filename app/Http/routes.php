@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('partials.celebration');
-});
-
+Route::get('/', 'PageController@showCoverPage');
 Route::get('wedding', 'PageController@showWeddingPage');
 Route::get('celebration', 'PageController@showCelebrationPage');
 Route::get('reply', 'PageController@showReplyPage');
