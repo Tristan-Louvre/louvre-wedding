@@ -1,19 +1,42 @@
 @extends('layouts.master')
 
-@section('content')
+@section('pageSpecificFonts')
+    <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+@endsection
 
+@section('css')coverBody @endsection
+
+@section('content')
     <div class="site-wrapper">
         <div class="site-wrapper-inner">
+            <h1>Wedding Invite</h1>
             <div class="cover-container">
+
                 <div class="inner cover">
-                    <h1 class="cover-heading">Cover your page.</h1>
-                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-                    <p class="lead">
-                        <a href="#" class="btn btn-lg btn-default">Learn more</a>
-                    </p>
+                    <video id="stopMotionInvite" width="600" controls>
+                        <source src="/vid/stopmotionInvite.mp4" type="video/mp4">
+                    </video>
+                    <div row button>
+                        <div class="col-md-2 col-md-push-10">
+                            <a href="celebration" class="btn btn-lg btn-default">skip</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+@endsection
+
+
+@section('pageSpecificScripts')
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#stopMotionInvite").bind('ended', function(){
+                location.href="celebration";
+            });
+        });
+    </script>
 
 @endsection

@@ -12,10 +12,13 @@
 */
 
 Route::get('/', 'PageController@showCoverPage');
-Route::get('wedding', 'PageController@showWeddingPage');
 Route::get('celebration', 'PageController@showCelebrationPage');
-Route::get('reply', 'PageController@showReplyPage');
+Route::get('wedding', 'PageController@showWeddingPage');
 Route::get('gifts', 'PageController@showGiftPage');
+Route::get('reply', 'PageController@showReplyPage');
+Route::post('reply','InviteController@sendInviteEmail');
+
+
 
 /*
 |--------------------------------------------------------------------------

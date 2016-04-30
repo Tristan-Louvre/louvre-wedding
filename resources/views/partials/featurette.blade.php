@@ -1,7 +1,15 @@
 @extends('partials.header')
 
-@section('featurette')
+@section('pageSpecificFonts')
+    @yield('pageSpecificFonts')
+@endsection
 
+
+@section('featurette')
+    <audio>
+        <source src=@yield('music') type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <!-- Featurettes
     ================================================== -->
 
@@ -9,25 +17,24 @@
 
         <!-- START THE FEATURETTES -->
         <h1 class="page-header">@yield('title')</h1>
+        <h4 class="sub-header">@yield('sub-title')</h4>
 
         <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-                <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
+            <div class="col-md-4 col-md-push-1">
                 @yield("first.image")
+            </div>
+            <div class="col-md-5 col-md-push-2">
+                @yield('featuretteOneText')
             </div>
         </div>
 
         <hr class="featurette-divider">
 
         <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <div class="col-md-5 col-md-push-1">
+                @yield('featuretteTwoText')
             </div>
-            <div class="col-md-5">
+            <div class="col-md-4 col-md-push-2">
                 @yield("second.image")
             </div>
         </div>
@@ -35,19 +42,16 @@
         <hr class="featurette-divider">
 
         <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-                <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
+            <div class="col-md-4 col-md-push-1">
                 @yield("third.image")
+            </div>
+            <div class="col-md-5 col-md-push-2">
+                @yield('featuretteThreeText')
             </div>
         </div>
 
         <hr class="featurette-divider">
-
         <!-- /END THE FEATURETTES -->
-
     </div><!-- /.container -->
 
 @endsection

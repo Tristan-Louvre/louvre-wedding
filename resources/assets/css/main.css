@@ -1,123 +1,32 @@
-/*
- * Base structure
- */
-
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-    padding-top: 50px;
+body:not(.coverBody) {
+    padding-top: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
-
-/*
- * Global add-ons
- */
+.page-header{
+    padding-bottom: 0px;
+    border-bottom: 0px solid #FFFFFF;
+    margin-bottom: 0px;
+}
 
 .sub-header {
+    margin-top: 5px;
+    padding-top: 0px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
 }
 
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
+
 .navbar-fixed-top {
     border: 0;
-    background-color: #4a708b;
-}
-
-/*
- * Sidebar
- */
-
-/* Hide for mobile, show later */
-.sidebar {
-    display: none;
-}
-@media (min-width: 768px) {
-    .sidebar {
-        position: fixed;
-        top: 51px;
-        bottom: 0;
-        left: 0;
-        z-index: 1000;
-        display: block;
-        padding: 20px;
-        overflow-x: hidden;
-        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-        background-color: #f5f5f5;
-        border-right: 1px solid #eee;
-
-    }
-}
-
-/* Sidebar navigation */
-.nav-sidebar {
-    margin-right: -21px; /* 20px padding + 1px border */
-    margin-bottom: 20px;
-    margin-left: -20px;
-}
-.nav-sidebar > li > a {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-    color: #fff;
-    background-color: #428bca;
+    background-color: #0a0a0a;
+    font-size: 30px;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 
-/*
- * Main content
- */
-
-.main {
-    padding: 20px;
-}
-@media (min-width: 768px) {
-    .main {
-        padding-right: 40px;
-        padding-left: 40px;
-    }
-}
-.main .page-header {
-    margin-top: 0;
-}
-
-
-/*
- * Placeholder dashboard ideas
- */
-
-.placeholders {
-    margin-bottom: 30px;
-    text-align: center;
-}
-.placeholders h4 {
-    margin-bottom: 0;
-}
-.placeholder {
-    margin-bottom: 20px;
-}
-.placeholder img {
-    display: inline-block;
-    border-radius: 50%;
-}
-
-/* Featurettes
-------------------------- */
 
 .featurette-divider {
-    margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
+    margin: 10px 0;
 }
 
 @media (min-width: 768px) {
@@ -138,60 +47,37 @@ body {
     .navbar-wrapper .navbar {
         border-radius: 4px;
     }
-
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 20px;
-        font-size: 21px;
-        line-height: 1.4;
-    }
-
-    .featurette-heading {
-        font-size: 50px;
-    }
 }
 
-@media (min-width: 992px) {
-    .featurette-heading {
-        margin-top: 120px;
-    }
-}
 
 /*
  * Globals
  */
 
-/* Links */
-a,
-a:focus,
-a:hover {
-    color: #fff;
-}
-
 /* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
+.cover .btn-default,
+.cover .btn-default:hover,
+.cover .btn-default:focus {
     color: #333;
-    text-shadow: none; /* Prevent inheritence from `body` */
     background-color: #fff;
     border: 1px solid #fff;
+    padding: 5px 5px;
+    font-weight: normal;
 }
 
+.reply .btn-default,
+.reply .btn-default:hover,
+.reply .btn-default:focus {
+    color: #ff5471;
+    background-color: #fff;
+    border: 1px solid #ff5471;
+    padding: 10px 10px;
+}
 
-/*
- * Base structure
- */
 
 html,
 body {
     height: 100%;
-    background-color: #333;
-}
-body {
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -200,8 +86,6 @@ body {
     width: 100%;
     height: 100%; /* For at least Firefox */
     min-height: 100%;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
     display: table-cell;
@@ -211,112 +95,149 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-
-/* Padding for spacing */
 .inner {
     padding: 30px;
 }
-
-
-/*
- * Header
- */
-.masthead-brand {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.masthead-nav > li {
-    display: inline-block;
-}
-.masthead-nav > li + li {
-    margin-left: 20px;
-}
-.masthead-nav > li > a {
-    padding-right: 0;
-    padding-left: 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff; /* IE8 proofing */
-    color: rgba(255,255,255,.75);
-    border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-    background-color: transparent;
-    border-bottom-color: #a9a9a9;
-    border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-    color: #fff;
-    border-bottom-color: #fff;
-}
-
-@media (min-width: 768px) {
-    .masthead-brand {
-        float: left;
-    }
-    .masthead-nav {
-        float: right;
-    }
-}
-
-
-/*
- * Cover
- */
-
-.cover {
-    padding: 0 20px;
-}
-.cover .btn-lg {
-    padding: 10px 20px;
-    font-weight: bold;
-}
-
-
-/*
- * Footer
- */
-
-.mastfoot {
-    color: #999; /* IE8 proofing */
-    color: rgba(255,255,255,.5);
-}
-
 
 /*
  * Affix and center
  */
 
 @media (min-width: 768px) {
-    /* Pull out the header and footer */
-    .masthead {
-        position: fixed;
-        top: 0;
-    }
-    .mastfoot {
-        position: fixed;
-        bottom: 0;
-    }
     /* Start the vertical centering */
     .site-wrapper-inner {
         vertical-align: middle;
     }
     /* Handle the widths */
-    .masthead,
-    .mastfoot,
     .cover-container {
         width: 100%; /* Must be percentage or pixels for horizontal alignment */
     }
 }
 
 @media (min-width: 992px) {
-    .masthead,
-    .mastfoot,
     .cover-container {
         width: 700px;
     }
 }
+
+.coverBody {
+    color: #fff;
+    text-align: center;
+    background-image: url("/img/backgrounds/wood.jpg");
+    background-size:cover
+}
+
+.coverBody h1{
+    font-family: 'Parisienne', cursive;
+    font-size: 100px
+}
+
+.page-header{
+    font-family: 'Parisienne', cursive;
+}
+.sub-header{
+    font-family: 'IM Fell French Canon', serif;
+}
+
+.celebration{
+    background-color: #FFFFFF;
+    color: #492b5a;
+    /*font-family: 'Roboto Slab', serif;*/
+}
+
+.celebration .marketing{
+    background-color: #B3D8EF;
+}
+
+.celebration .sub-header{
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.celebration .featurette-divider{
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.wedding{
+    background-color: #607e73;
+    color: #f7f7f4;
+    /*font-family: 'Petit Formal Script', cursive;*/
+}
+
+.wedding .marketing{
+    background-color: #471426;
+}
+
+
+.wedding .sub-header{
+    border-bottom: 1px solid #607e73;
+    /*font-family: 'Parisienne', cursive;*/
+}
+
+.wedding .featurette-divider{
+    background-color: #607e73;
+    color: #607e73;
+    border-color: #607e73;
+}
+
+.gift{
+    background-color: #3f171c;
+    color: #e5e5b3;
+    /*font-family: 'Cantarell', sans-serif;*/
+}
+.gift .marketing{
+    background-color: #083648;
+}
+
+.gift .text{
+    vertical-align: text-bottom;
+}
+
+.gift .sub-header{
+    border-bottom: 1px solid #3f171c;
+}
+
+.gift .featurette-divider{
+    background-color: #3f171c;
+    color: #3f171c;
+    border-color: #3f171c;
+}
+
+.reply{
+    background-image: url("/img/backgrounds/rsvpBG.png") ;
+    color: #ff5471;
+    /*font-family: 'Alegreya Sans', sans-serif;*/
+}
+
+.reply .marketing{
+    background-color: #ffffff;
+}
+
+.reply .sub-header{
+    border-bottom: 1px solid #090a10;
+}
+
+.reply .featurette-divider{
+    background-color: #090a10;
+    color: #090a10;
+    border-color: #090a10;
+}
+
+.reply .attendanceLabel{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.reply .attendanceRadio{
+    padding-left: 20px;
+}
+
+.reply .radio-inline{
+    font-size: 18px;
+}
+
+
+
+
+
