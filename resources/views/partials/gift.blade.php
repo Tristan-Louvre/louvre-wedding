@@ -26,7 +26,7 @@
 @endsection
 
 @section('featuretteOneText')
-	<h2>Your presence alone is gift enough, but if you would like to bless us with something tangible anything would be greatly appreciated – from a single flower to a trip to New Zealand ;) What we would really love though, is some financial help towards investing in our first piece of property.</h2>
+	<h2>Your presence alone is gift enough, but if you would like to bless us with something tangible, we have a special request in mind... What we would really love is some financial help towards investing in our first piece of property. Of course, anything would be greatly appreciated – from a single flower to a trip to New Zealand ;) </h2>
 @endsection
 
 @section('second.image')
@@ -34,7 +34,7 @@
 @endsection
 
 @section('featuretteTwoText')
-	<h2>If you do bring something in a box or with a bow to give to us personally, we ask that you bring it along to the Ceremony on Sunday.</h2>
+	<h2>If you do bring something in a box or with a bow, we ask that you bring it along to the Ceremony on Sunday.</h2>
 @endsection
 
 @section('third.image')
@@ -42,5 +42,7 @@
 @endsection
 
 @section('featuretteThreeText')
+	<h2>If you wish to contribute towards our Flat Fund the account details are:</h2>
+
 	<h2>Please include your name as a reference and send a message to margueritebredell@gmail.com or bring a card to the wedding so that we know whom to thank.</h2>
 @endsection

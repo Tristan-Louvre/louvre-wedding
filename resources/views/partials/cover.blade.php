@@ -18,7 +18,7 @@
                     </video>
                     <div row button>
                         <div class="col-md-2 col-md-push-10">
-                            <a href="celebration" class="btn btn-lg btn-default">skip</a>
+                            <a href="wedding" class="btn btn-lg btn-default">skip</a>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $("#stopMotionInvite").bind('ended', function(){
-                location.href="celebration";
+                location.href="wedding";
             });
         });
     </script>
