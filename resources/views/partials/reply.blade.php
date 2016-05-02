@@ -73,7 +73,7 @@
 		</div>
 		<br>
 		<div class="row">
-			<div class="form-group col-xs-12 col-xs-offset-10">
+			<div class="form-group col-xs-12 col-xs-offset-5">
 				<button type="submit" class="btn btn-lg btn-default">Send</button>
 			</div>
 		</div>

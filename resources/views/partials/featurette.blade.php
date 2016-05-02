@@ -17,20 +17,20 @@
 
         <!-- START THE FEATURETTES -->
         <h1 class="page-header">@yield('title')</h1>
-        <h4 class="sub-header">@yield('sub-title')</h4>
+        <h3 class="sub-header">@yield('sub-title')</h3>
 
-        <div class="row featurette">
+        <div class="row featurette vertical-align">
             <div class="col-md-4 col-md-push-1">
                 @yield("first.image")
             </div>
             <div class="col-md-5 col-md-push-2">
-                @yield('featuretteOneText')
+                <span>@yield('featuretteOneText')</span>
             </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div class="row featurette vertical-align">
             <div class="col-md-5 col-md-push-1">
                 @yield('featuretteTwoText')
             </div>
@@ -41,16 +41,23 @@
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div class="row featurette vertical-align">
             <div class="col-md-4 col-md-push-1">
                 @yield("third.image")
             </div>
             <div class="col-md-5 col-md-push-2">
                 @yield('featuretteThreeText')
+                @yield('featuretteFourText')
             </div>
         </div>
 
         <hr class="featurette-divider">
+
+        <div class="row featurette vertical-align">
+            <div class="col-md-4 col-md-push-2">
+                @yield('googleMap')
+            </div>
+        </div>
         <!-- /END THE FEATURETTES -->
     </div><!-- /.container -->
 

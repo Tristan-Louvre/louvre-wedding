@@ -159,6 +159,10 @@ body {
     border-color: #FFFFFF;
 }
 
+.featurette:not(.reply){
+    text-align: center;
+}
+
 .wedding{
     background-color: #607e73;
     color: #f7f7f4;
@@ -237,6 +241,14 @@ body {
     font-size: 18px;
 }
 
+li{
+    text-align: left;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
 
 
 

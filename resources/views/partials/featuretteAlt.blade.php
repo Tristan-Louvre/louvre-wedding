@@ -16,7 +16,7 @@
 
         <!-- START THE FEATURETTES -->
         <h1 class="page-header">@yield('title')</h1>
-        <h4 class="sub-header">@yield('sub-title')</h4>
+        <h3 class="sub-header">@yield('sub-title')</h3>
 
         <div class="row featurette">
             <div class="col-md-5 col-md-push-1">
