@@ -18,7 +18,7 @@
 @endsection
 
 @section('sub-title')
-	“I know, you know, that I know you love me “ - Fireworks, Plain White T's.
+	“I know, you know, that I know you love me” - Fireworks, Plain White T's.
 @endsection
 
 @section('first.image')

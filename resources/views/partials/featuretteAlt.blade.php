@@ -5,7 +5,7 @@
 @endsection
 
 @section('featurette')
-    <audio autoplay="autoplay">
+    <audio>
         <source src=@yield('music') type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>

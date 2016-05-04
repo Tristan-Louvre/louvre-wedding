@@ -18,7 +18,7 @@
 @endsection
 
 @section('sub-title')
-	”You and me, we belong together. Just like a breath needs the air” - You and Me, You+Me.
+	“You and me, we belong together. Just like a breath needs the air” - You and Me, You+Me.
 
 @endsection
 
