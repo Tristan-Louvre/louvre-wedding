@@ -54,6 +54,10 @@
         <hr class="featurette-divider">
 
         <div class="row featurette vertical-align">
+            <div class="col-md-2 col-md-push-1">
+                @yield('featuretteFiveText')
+                @yield("fourth.image")
+            </div>
             <div class="col-md-4 col-md-push-2">
                 @yield('googleMap')
             </div>

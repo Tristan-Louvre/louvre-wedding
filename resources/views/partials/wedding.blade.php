@@ -35,7 +35,7 @@
 @endsection
 
 @section('featuretteTwoText')
-	<h2>Guests are asked to arrive by 1pm in order for the wedding to start promptly. The couple would like for you to come dressed in semi-formal attire. After the ceremony there will be a small reception with tea, coffee and cake being served.</h2>
+	<h2>Guests are asked to arrive by 1 pm as the ceremony will start promptly at 1:15 pm. The couple would like for you to come dressed in semi-formal attire. After the ceremony there will be a small reception with tea, coffee and cake being served.</h2>
 @endsection
 
 @section('third.image')
@@ -64,10 +64,18 @@
 	</h4>
 @endsection
 
+@section('featuretteFiveText')
+	<h3>Follow the dots to the top of the road. Parking to the right.</h3>
+@endsection
+
+@section('fourth.image')
+	{{ Html::image('/img/redDot.png', 'Generic placeholder image', array('class' => "featurette-image img-responsive center-block")) }}
+@endsection
+
 @section('googleMap')
-	<div style='overflow:hidden;height:440px;width:700px;'>
+	<div style='overflow:hidden;height:440px;width:700px;color: #000000'>
 		<div id='gmap_canvas' style='height:440px;width:700px;'></div>
-		<style>#gmap_canvas img{max-width:none!important;background:none!important;color:#000000}</style>
+		<style>#gmap_canvas img{max-width:none!important;background:none!important;}</style>
 	</div>
 @endsection
 

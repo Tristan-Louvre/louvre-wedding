@@ -27,7 +27,7 @@
 
 @section('featuretteOneText')
 	<h1>We are looking forward to celebrating with you!</h1>
-	<h2>If you haven't yet done so kindly respond before 31st of May, 2016.</h2>
+	<h2>If you haven't yet done so, kindly respond before 31st of May, 2016.</h2>
 	<h3>Please also inform us of any special details regarding your attendance eg. only joining us for one of the two days, dietary restrictions or anything else you feel we would need to know to help you fully enjoy your time with us.</h3>
 @endsection
 
