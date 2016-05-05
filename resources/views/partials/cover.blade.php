@@ -13,7 +13,7 @@
             <div class="cover-container">
 
                 <div class="inner cover">
-                    <video id="stopMotionInvite" width="600" controls autoplay="autoplay">
+                    <video id="stopMotionInvite" width="600">
                         <source src="/vid/stopmotionInvite.mp4" type="video/mp4">
                     </video>
                     <div row button>
